@@ -1,4 +1,8 @@
-import edu.princeton.cs.algs4.*;
+import edu.princeton.cs.algs4.BreadthFirstDirectedPaths;
+import edu.princeton.cs.algs4.Digraph;
+import edu.princeton.cs.algs4.In;
+import edu.princeton.cs.algs4.StdIn;
+import edu.princeton.cs.algs4.StdOut;
 
 public class SAP {
     private Digraph G;
@@ -37,7 +41,7 @@ public class SAP {
     }
 
     // a common ancestor that participate in shortest ancestor path, -1 if no such path
-    public int anscestor(Iterable<Integer> v, Iterable<Integer> w) {
+    public int ancestor(Iterable<Integer> v, Iterable<Integer> w) {
         length(v, w);
         return anc;
     }
